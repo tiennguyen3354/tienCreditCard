@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+  <div class="bigContainer">
+    
+    <div class="cardBackground">
+      <img class="leftSideImage" src="images/bg-main-desktop.png" alt="">
+    </div>
+
+    <div class="formContainer">
+      <div class="form">
+      
+          <div class="nameForm">
+            <label for="cardName">CARDHOLDER NAME</label><br>
+            <input type="text" id="cardHolderName" placeholder="Enter Card Name">
+          </div>
+            <br>
+            <label for="cardNumber">CARD NUMBER</label><br>
+            <input type="text" id="cardHolderNumber" placeholder="Enter Card Number" maxlength="16"><br>
+              <div class="expDates">
+                <label for="EXPDATES"> EXP. DATE (MM/YY)</label><label class="CVC" for="CVC">CVC</label><br>
+                <input type="text" name="EXPDATES" id="cardExMonth" placeholder="MM" maxlength="2">
+                <input type="text" name="EXPDATES" id="cardExYear" placeholder="YY" maxlength="2">
+                
+                <input type="text" name="CVC" id="cardCVC" placeholder="CVC" maxlength="3">
+              </div>
+            <button>Confirm</button>
+      
+      </div>
+
+    </div>
+
+    <div class="frontOfCard">
+      <h1 class="FOCh1"></h1>
+      <div class="FOCnameAndexp">
+      <p class="FOCname"></p>
+      <p class="FOCexp"></p>
+      </div>
+    </div>
+    <div class="backOfCard">
+       <div class="BOCcvc"></div>
+    </div>
+
+   
+    
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
